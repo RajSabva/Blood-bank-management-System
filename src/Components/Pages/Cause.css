@@ -1,0 +1,124 @@
+.cause-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 110px 420px 100px 340px;
+    gap: 40px;
+}
+.cause-image img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+.cause-content h2{
+    color: #0c2d5e;
+  font-weight: bold;
+}
+.cause-content p {
+  color: #333;
+  line-height: 1.6;
+}
+.progress-bar-container {
+  margin: 15px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #f2c2c2;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: red;
+  transition: width 0.4s ease-in-out;
+}
+
+.slider {
+  width: 100%;
+  appearance: none;
+  height: 8px;
+  background: transparent;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4px;
+}
+
+.slider::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.donation-info {
+  font-weight: bold;
+  margin: 8px 0;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between; /* or space-around / space-evenly */
+  gap: 10px;
+  width: 100%; /* take full width of the content area */
+  margin-bottom: 10px;
+}
+
+.fb-button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 8px;
+}
+
+.w-button {
+  background-color: green;
+  color: white;
+  
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+.w-button svg{
+    width: 30px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.fb-button svg{
+    width: 2px;
+    height: 8px;
+}
+
+.donate-button {
+  width: 100%;
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 0;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}

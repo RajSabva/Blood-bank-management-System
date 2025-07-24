@@ -1,0 +1,191 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+.image{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* covers the screen while maintaining aspect ratio */
+    display: block;
+}
+.hero{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+}
+.hero-top{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.overlay{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formbox{
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 35px;
+  margin-bottom: 250px;
+  margin-right: 586px;
+  border-radius: 12px;
+   background-color: rgba(47, 46, 46, 0.34);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  min-width: 280px;
+}
+.formbox select,
+.formbox button{
+  padding: 15px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+.formbox button {
+  grid-column: span 2;         /* span across both columns */
+  justify-self: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d32f2f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.formbox button:hover {
+  background-color: #b71c1c;
+}
+.right-content{
+  position: absolute;
+  right: 180px;
+  top: 139px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  
+ 
+  }
+.right-content h1 {
+  font-weight: 400;
+}
+h1 strong{
+  font-weight: 700;
+}
+.action-button{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+
+}
+.circle{
+  background-color: rgba(47, 46, 46, 0.34);
+  border-radius: 50%;
+  padding: 30px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+}
+.second {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 90px;
+  background-color: rgb(206, 177, 181);
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.donation-box {
+  background-color: rgb(206, 177, 181);
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+}
+
+.donation-box .word {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.donation-box .line {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #222;
+}
+.white-line {
+  width: 90%;
+  height: 3px;
+  background-color: white;
+  margin: 6px auto 0px auto; /* top and bottom spacing */
+  border-radius: 2px;
+}
+.donate-btn button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #d32f2f;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.donate-btn button:hover {
+  background-color: #d32f2f;
+  color: white;
+}
+.why-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f1f5f9;
+  padding: 60px 40px;
+}
+.image-side img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+.text-side {
+  max-width: 600px;
+
+}
+.text-side h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.text-side p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
